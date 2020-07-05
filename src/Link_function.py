@@ -24,7 +24,7 @@ def get_links(pages):
     import itertools
     
     news_url = []
-    for p in range(1,pages):
+    for p in range(1,pages+1):
         url = 'https://www.reuters.com/news/archive/bank-news?view=page&page='+str(p)+'&pageSize=10'
         print(url)
         news_url.append(get_one_link(url))
